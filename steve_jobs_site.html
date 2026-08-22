@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Стив Джобс — путь к успеху</title>
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#f5f5f7;background:#050505;line-height:1.6}
+    .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;
+      padding:70px 22px;position:relative;overflow:hidden;
+      background:radial-gradient(circle at 50% 20%,#252525 0,#0b0b0b 38%,#050505 72%)}
+    .hero:after{content:"";position:absolute;inset:auto -20% -55% -20%;height:60%;
+      background:radial-gradient(circle,#7773,transparent 60%);filter:blur(50px)}
+    .hero-content{position:relative;z-index:1;max-width:900px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;color:#aaa}
+    h1{font-size:clamp(3.5rem,11vw,8.5rem);line-height:.9;margin:22px 0;
+      letter-spacing:-.07em}
+    .hero p{font-size:clamp(1.05rem,2.2vw,1.45rem);color:#c8c8cc;max-width:680px;margin:0 auto 34px}
+    .btn{display:inline-block;padding:13px 22px;border:1px solid #555;border-radius:999px;
+      color:white;text-decoration:none;transition:.2s}
+    .btn:hover{background:white;color:black;transform:translateY(-2px)}
+    section{max-width:1100px;margin:auto;padding:90px 22px}
+    .section-label{color:#8f8f94;text-transform:uppercase;letter-spacing:.16em;font-size:.75rem}
+    h2{font-size:clamp(2.2rem,5vw,4.3rem);line-height:1;margin:12px 0 45px;letter-spacing:-.04em}
+    .timeline{position:relative;margin-left:12px;padding-left:38px;border-left:1px solid #383838}
+    .event{position:relative;margin:0 0 52px}
+    .event:before{content:"";position:absolute;left:-44px;top:8px;width:11px;height:11px;
+      border-radius:50%;background:#fff;box-shadow:0 0 0 5px #050505}
+    .year{font-size:.9rem;color:#aaa;letter-spacing:.08em}
+    .event h3{font-size:1.45rem;margin:5px 0 8px}
+    .event p{color:#bdbdc2;max-width:720px;margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#111;border:1px solid #242424;border-radius:22px;padding:28px;min-height:210px}
+    .card span{font-size:2rem}.card h3{margin:16px 0 8px}.card p{color:#aaa;margin:0}
+    .quote{padding:70px 30px;text-align:center;border-top:1px solid #222;border-bottom:1px solid #222}
+    blockquote{font-size:clamp(1.7rem,4vw,3.3rem);line-height:1.15;letter-spacing:-.03em;max-width:900px;margin:0 auto 18px}
+    .quote small{color:#888}
+    .lesson{background:#f5f5f7;color:#111;max-width:none}
+    .lesson-inner{max-width:1100px;margin:auto;padding:90px 22px}
+    .lesson .section-label{color:#666}.lesson h2{color:#111}
+    .lesson-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .lesson-item{padding:24px;border-top:1px solid #bbb}
+    .lesson-item b{display:block;font-size:1.15rem;margin-bottom:6px}
+    footer{text-align:center;color:#777;padding:35px 20px;font-size:.85rem}
+    @media(max-width:760px){.cards,.lesson-grid{grid-template-columns:1fr}section,.lesson-inner{padding:65px 20px}.card{min-height:auto}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">История человека и идеи, изменившей технологии</div>
+      <h1>Стив<br>Джобс</h1>
+      <p>Путь от приёмного сына и студента, бросившего колледж, до одного из самых известных предпринимателей в истории технологий.</p>
+      <a class="btn" href="#story">Смотреть историю ↓</a>
+    </div>
+  </header>
+
+  <main id="story">
+    <section>
+      <div class="section-label">Путь</div>
+      <h2>Не прямая линия.</h2>
+      <div class="timeline">
+        <article class="event">
+          <div class="year">1955</div>
+          <h3>Начало</h3>
+          <p>Стив Джобс родился в Сан-Франциско и вскоре был усыновлён Полом и Кларой Джобс. В семье он рано познакомился с электроникой и инженерной культурой Кремниевой долины.</p>
+        </article>
+        <article class="event">
+          <div class="year">1972–1974</div>
+          <h3>Поиск своего пути</h3>
+          <p>Джобс поступил в Reed College, но вскоре оставил обычную программу обучения. Он продолжал посещать интересующие его занятия, в том числе курс каллиграфии.</p>
+        </article>
+        <article class="event">
+          <div class="year">1976</div>
+          <h3>Apple</h3>
+          <p>Вместе со Стивом Возняком Джобс стал одним из основателей Apple. Компания начала с создания персональных компьютеров и постепенно превратилась в крупный технологический бренд.</p>
+        </article>
+        <article class="event">
+          <div class="year">1985</div>
+          <h3>Большой поворот</h3>
+          <p>После конфликта внутри Apple Джобс покинул компанию. Он основал NeXT, а позже приобрёл компанию Pixar, которая стала важной силой в современной анимации.</p>
+        </article>
+        <article class="event">
+          <div class="year">1997–2011</div>
+          <h3>Возвращение и новое десятилетие</h3>
+          <p>Джобс вернулся в Apple и участвовал в создании продуктов, которые сильно повлияли на индустрию: iMac, iPod, iPhone и iPad. Он также помог превратить Apple в одну из самых влиятельных компаний мира.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Главные идеи</div>
+      <h2>Что стоит взять<br>из этой истории?</h2>
+      <div class="cards">
+        <div class="card"><span>01</span><h3>Любопытство</h3><p>Интерес к разным областям может неожиданно пригодиться спустя годы.</p></div>
+        <div class="card"><span>02</span><h3>Неудачи — не конец</h3><p>Уход из собственной компании стал тяжёлым этапом, но затем открыл новый период творчества и бизнеса.</p></div>
+        <div class="card"><span>03</span><h3>Простота</h3><p>Джобс уделял большое внимание тому, чтобы сложные технологии были понятными и удобными для людей.</p></div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <blockquote>«Ваше время ограничено, поэтому не тратьте его, живя чужой жизнью».</blockquote>
+      <small>Идея из знаменитой речи Стива Джобса в Стэнфорде, 2005</small>
+    </section>
+
+    <section class="lesson">
+      <div class="lesson-inner">
+        <div class="section-label">Вывод</div>
+        <h2>Успех — это не отсутствие ошибок.</h2>
+        <div class="lesson-grid">
+          <div class="lesson-item"><b>Сохраняй интерес</b>Изучай то, что действительно тебя увлекает, даже если сейчас непонятно, где это пригодится.</div>
+          <div class="lesson-item"><b>Учись на поворотах</b>Неудача может стать частью следующего этапа, если сделать из неё выводы.</div>
+          <div class="lesson-item"><b>Создавай для людей</b>Хорошая идея становится сильнее, когда решает реальную проблему пользователя.</div>
+          <div class="lesson-item"><b>Думай самостоятельно</b>Собственный путь редко выглядит идеально и не обязан совпадать с чужими ожиданиями.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Сайт-проект о жизненном и профессиональном пути Стива Джобса · 2026</footer>
+</body>
+</html>
